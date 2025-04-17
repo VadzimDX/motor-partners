@@ -1,0 +1,45 @@
+html{
+	height: 100%;
+	background: #000000;
+	font-size: 0.83333333vw;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	&::-webkit-scrollbar {
+		height: em(4);
+		width: em(6);
+	}
+	&::-webkit-scrollbar-track {
+		background: #000000;
+		width: em(6);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #FF1E00;
+		width: em(6);
+	}
+}
+body{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+// @media(max-width:1024px) and (orientation:portrait){
+// 	html{
+// 		font-size: 1vw;
+// 	}
+// 	.container{
+// 		width: 90%;
+// 	}
+// }
+@media(max-width:1024px) and (orientation:portrait){
+	html{
+		font-size:2vw;
+	}
+	body{
+		display: flex;
+		flex-direction: column;
+	}
+}
+

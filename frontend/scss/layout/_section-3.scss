@@ -1,0 +1,111 @@
+.section-3{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: em(240);
+    z-index: 1;
+    &__main{
+        position: relative;
+        width: em(1400);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        opacity: 0;
+        &.visible{
+            animation: .1s fadeIn ease-in-out forwards;
+        }
+    }
+    &__text_block{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: em(760);
+    }
+    &__heading{
+        position: relative;
+        width: 100%;
+        opacity: 0;
+        transform: translateX(em(150));
+        h3{
+            color:  #ffffff;
+            font-family: "Eurostile Extended";
+            font-size: em(32);
+            font-weight: bold;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+    }
+    &__text{
+        position: relative;
+        width: em(652);
+        margin-top: em(20);
+        opacity: 0;
+        transform: translateX(em(150));
+        p{
+            color: #828282;
+            font-family: 'Inter', sans-serif;
+            font-size: em(22);
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: em(0.44,22);
+            span{
+                color:  #ffffff;
+                font-weight: 600;
+                font-size: em(22,22);
+            }   
+        }
+    }
+    &__btn_block{
+        position: relative;
+        margin-top: em(60);
+        opacity: 0;
+        transform: translateX(em(150));
+    }
+    &__car{
+        position: absolute;
+        width: em(1728);
+        right: em(-970);
+        top: em(-150);
+        z-index: 1;
+        pointer-events: none;
+        user-select: none;
+        img{
+            width: 100%;
+            opacity: 0;
+            transform: translateX(em(-500)) translateY(em(20));
+        }
+    }
+    &__car_shine{
+        position: absolute;
+        width: em(369);
+        z-index: 2;
+        pointer-events: none;
+        user-select: none;
+        img{
+            width: 100%;
+        }
+        &.shine-1{
+            left: em(90);
+            top: em(50);
+            animation: 4s lights linear infinite;
+        }
+        &.shine-2{
+            left: em(370);
+            top: em(60);
+            animation: 4s lights linear infinite;
+        }
+    }
+}
+
+@media(max-width:1024px) and (orientation:portrait){
+    .section-3{
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        transform: translate(0,0) scale(1) rotate(0deg);
+    }
+}
+@keyframes fadeInOp{
+    to{
+        opacity: 1;
+    }
+}
+
+.anim-fade{
+    animation: .6s fadeIn ease-in-out forwards;
+}
+
+@keyframes lights{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
